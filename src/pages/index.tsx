@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import {Icon} from '@iconify/react'
+import { Header } from '@/components/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,8 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div>
-          <Icon icon="mdi-light:home" />
+        <div className='h-screen bg-[#110626]'>
+          <Header/>
         </div>
        
       </main>
