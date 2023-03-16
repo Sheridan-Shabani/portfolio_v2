@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link";
 
-export const Header = (
+const Header = (
 ) => {
     return ( 
         <div className='sticky top-0 px-52 pt-4 flex justify-between items-center'>
@@ -32,3 +32,5 @@ export const Header = (
           </div>
     )
 }
+
+export default Header
