@@ -15,11 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='bg-[#110626]'>
+        <div className='min-h-screen bg-[#110626] px-24'>
           <Header/>
           <Hero/>
-          <div className='h-screen'>
-
+          <div className='h-[calc(100vh-74px)] pt-10'>
+            <h4 className='uppercase text-4xl text-[#F9F871]'>About</h4>
           </div>
         </div>
       </main>

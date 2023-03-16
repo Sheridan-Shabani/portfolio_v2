@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = (
 ) => {
     return ( 
-        <div className='sticky top-0 px-52 pt-4 flex justify-between items-center'>
+        <div className='sticky top-0 pt-4 flex justify-between items-center bg-[#110626]'>
             <div className='flex flex-1'>
             <h1 className='text-xl uppercase'>Sheridan <br/> SHABANI</h1>
             </div>
