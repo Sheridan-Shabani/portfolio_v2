@@ -1,8 +1,7 @@
 import React from "react"
 import Link from "next/link";
 
-const Header = (
-) => {
+const Header = () => {
     return ( 
         <div className='sticky top-0 pt-4 flex justify-between items-center bg-[#110626]'>
             <div className='flex flex-1'>
@@ -26,10 +25,10 @@ const Header = (
               </Link>
             </nav>
             <div className='flex flex-col flex-1 items-end'>
-              <button>FRA</button>
-              <button>ENG</button>
+                <button>FRA</button>
+                <button>ENG</button>
             </div>
-          </div>
+      </div>
     )
 }
 
