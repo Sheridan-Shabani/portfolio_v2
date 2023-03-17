@@ -1,13 +1,12 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from "@/components/About";
-
-const inter = Inter({ subsets: ['latin'] })
+import React from "react";
+import Experiences from "@/components/Experiences";
 
 export default function Home() {
-  return (
+    return (
     <>
         <Head>
         <title>Create Next App</title>
@@ -16,10 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className='min-h-screen bg-[#110626] px-24'>
+        <div className='min-h-screen bg-[#110626] px-44'>
             <Header/>
             <Hero/>
             <About/>
+            <Experiences/>
         </div>
       </main>
     </>
