@@ -2,7 +2,7 @@ import React from "react"
 
 const About = () => {
     return (
-        <div className='pt-10'>
+        <div className=''>
             <h4 className='uppercase text-4xl text-[#F9F871] mb-10'>About</h4>
             <p className={""}>
                 Welcome to my world, that of Sheridan SHABANI, your computer prodigy. At 24, I am currently an apprentice engineer at CESI in Arras, but don't be fooled.

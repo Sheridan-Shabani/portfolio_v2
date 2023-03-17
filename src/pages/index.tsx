@@ -4,6 +4,7 @@ import Hero from '@/components/Hero'
 import About from "@/components/About";
 import React from "react";
 import Experiences from "@/components/Experiences";
+import Educations from "@/components/Educations";
 
 export default function Home() {
     return (
@@ -20,8 +21,11 @@ export default function Home() {
             <Hero/>
             <About/>
             <Experiences/>
+            <Educations/>
         </div>
       </main>
     </>
   )
 }
+
+
