@@ -24,6 +24,9 @@ export default function Home() {
                     <Experiences/>
                     <Educations/>
                     <Projects/>
+                    <div className='pt-44'>
+                        <h4 className={'uppercase text-4xl text-[#F9F871] mb-10'}>Contact</h4>
+                    </div>
                 </div>
             </main>
         </>
