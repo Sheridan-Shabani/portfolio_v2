@@ -7,8 +7,11 @@ import Experiences from "@/components/Experiences";
 import Educations from "@/components/Educations";
 import Projects from "@/components/Projects";
 import { Icon } from "@iconify/react";
-import { MapContainer, TileLayer, useMap } from 'react-leaflet'
+import dynamic from "next/dynamic";
 
+const DynamicLeafletComponent = dynamic(() => import("@/components/Map"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -31,55 +34,43 @@ export default function Home() {
             <h4 className={"uppercase text-4xl text-[#F9F871] mb-10"}>
               Contact
             </h4>
-            <div>
-              <div className={"flex flex-row space-x-3 items-center"}>
-                <Icon
-                  icon="ph:phone-thin"
-                  color="#f9f871"
-                  width="20"
-                  height="20"
-                />
-                <p>+33 7 50 44 09 90</p>
-              </div>
-              <div className={"flex flex-row space-x-3 items-center"}>
-                <Icon
-                  icon="ph:envelope-thin"
-                  color="#f9f871"
-                  width="20"
-                  height="20"
-                />
-                <p>sheridan.shabani@outlook.fr</p>
-              </div>
-              <div className={"flex flex-row space-x-3 items-center"}>
-                <Icon
-                  icon="ph:map-pin-thin"
-                  color="#f9f871"
-                  width="20"
-                  height="20"
-                />
-                <p>
-                  11 résidence des oiseaux
-                  <br />
-                  62530 - Hersin-Coupigny
-                  <br />
-                  France
-                </p>
-                <MapContainer
-                  center={[51.505, -0.09]}
-                  zoom={13}
-                  scrollWheelZoom={false}
-                >
-                  <TileLayer
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            <div className="flex flex-row space-x-4">
+              <div className="flex flex-col space-y-4">
+                <div className={"flex flex-row space-x-3 items-center"}>
+                  <Icon
+                    icon="ph:phone-thin"
+                    color="#f9f871"
+                    width="20"
+                    height="20"
                   />
-                  <Marker position={position}>
-                    <Popup>
-                      A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
-                  </Marker>
-                </MapContainer>
+                  <p>+33 7 50 44 09 90</p>
+                </div>
+                <div className={"flex flex-row space-x-3 items-center"}>
+                  <Icon
+                    icon="ph:envelope-thin"
+                    color="#f9f871"
+                    width="20"
+                    height="20"
+                  />
+                  <p>sheridan.shabani@outlook.fr</p>
+                </div>
+                <div className={"flex flex-row space-x-3 items-center"}>
+                  <Icon
+                    icon="ph:map-pin-thin"
+                    color="#f9f871"
+                    width="20"
+                    height="20"
+                  />
+                  <p>
+                    11 résidence des oiseaux
+                    <br />
+                    62530 - Hersin-Coupigny
+                    <br />
+                    France
+                  </p>
+                </div>
               </div>
+              <DynamicLeafletComponent />
             </div>
           </div>
         </div>

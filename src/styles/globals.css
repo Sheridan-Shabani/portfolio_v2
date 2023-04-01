@@ -10,3 +10,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.leaflet-container {
+  @apply w-full h-full;
+ }
+ 
