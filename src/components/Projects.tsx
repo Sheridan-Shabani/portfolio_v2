@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Projects = () => {
     return (
-        <div className='pt-44'>
+        <div className='pt-20'>
             <h4 className={'uppercase text-4xl text-[#F9F871] mb-10'}>Projects</h4>
             <div className={"w-full flex space-x-5 overflow-x-scroll p-10 "}>
                 <div className={'flex flex-col flex-shrink-0 w-8/12 border border-[#F9F871] p-4 rounded-2xl space-y-5'}>

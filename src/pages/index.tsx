@@ -7,6 +7,7 @@ import Experiences from "@/components/Experiences";
 import Educations from "@/components/Educations";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 
 
@@ -29,6 +30,7 @@ export default function Home() {
           <Educations />
           <Projects />
           <Contact />
+          <Footer />
         </div>
       </main>
     </>

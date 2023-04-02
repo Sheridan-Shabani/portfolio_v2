@@ -2,7 +2,7 @@ import React from "react"
 
 const Educations = () => {
     return (
-        <div className={'pt-44 z-1'}>
+        <div className={'pt-20 z-1'}>
             <h4 className={'uppercase text-4xl text-[#F9F871] mb-10'}>Educations</h4>
             <div className={'w-full flex justify-center items-center'}>
                 <div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2">

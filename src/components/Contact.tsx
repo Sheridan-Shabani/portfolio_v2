@@ -22,15 +22,15 @@ const Contact = () => {
       (window.location.href = `mailto:sheridan.shabani@outlook.fr?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`)
     );
   return (
-    <div className="pt-44">
+    <div className="pt-20">
       <h4 className={"uppercase text-4xl text-[#F9F871] mb-10"}>Contact</h4>
       <div className="flex flex-row space-x-4">
         <div className="flex flex-col space-y-4">
-          <div className={"flex flex-row space-x-3 items-center"}>
+          <div className={"flex flex-row space-x-3 items-center font-light"}>
             <Icon icon="ph:phone-thin" color="#f9f871" width="20" height="20" />
             <p>+33 7 50 44 09 90</p>
           </div>
-          <div className={"flex flex-row space-x-3 items-center"}>
+          <div className={"flex flex-row space-x-3 items-center font-light"}>
             <Icon
               icon="ph:envelope-thin"
               color="#f9f871"
@@ -39,7 +39,7 @@ const Contact = () => {
             />
             <p>sheridan.shabani@outlook.fr</p>
           </div>
-          <div className={"flex flex-row space-x-3 items-center"}>
+          <div className={"flex flex-row space-x-3 items-center font-light"}>
             <Icon
               icon="ph:map-pin-thin"
               color="#f9f871"
