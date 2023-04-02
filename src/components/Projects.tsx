@@ -40,7 +40,7 @@ const Projects = () => {
                     </div>
                     <div className={'space-y-2'}>
                         <h5 className={'text-[#F9F871] uppercase'}>Technologies</h5>
-                        <div className={'grid grid-cols-6 gap-3'}>
+                        <div className={'grid grid-cols-3 2xl:grid-cols-6 gap-3'}>
                             <div className={'border border-[#F9F871] w-fit rounded-xl flex flex-row p-1 space-x-1 items-center'}>
                                 <Icon icon="mdi:tailwind" color="#f9f871" width="20" height="20" />
                                 <p className={'text-xs font-light'}>TailwindCSS</p>
@@ -106,7 +106,7 @@ const Projects = () => {
                     </div>
                     <div className={'space-y-2'}>
                         <h5 className={'text-[#F9F871] uppercase'}>Technologies</h5>
-                        <div className={'grid grid-cols-6 gap-3'}>
+                        <div className={'grid grid-cols-3 2xl:grid-cols-6 gap-3'}>
                             <div className={'border border-[#F9F871] w-fit rounded-xl flex flex-row p-1 space-x-1 items-center'}>
                                 <Icon icon="mdi:tailwind" color="#f9f871" width="20" height="20" />
                                 <p className={'text-xs font-light'}>TailwindCSS</p>
