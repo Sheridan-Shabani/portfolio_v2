@@ -8,7 +8,7 @@ const Experiences = () => {
   return (
     <div className="pt-20">
       <h4 className={"uppercase text-4xl text-[#F9F871] mb-10"}>Experiences</h4>
-      <div className={"w-full flex flex-row space-x-20 justify-center"}>
+      <div className={"w-full flex flex-row space-x-20"}>
         <div className={"flex flex-col space-y-5"}>
           {ExperiencesData.map((experience, index) => (
             <div
